@@ -1,0 +1,43 @@
+"LR": 5e-4
+"NUM_ENVS": 1024
+"NUM_STEPS": 32
+"TOTAL_TIMESTEPS": 2e7
+"UPDATE_EPOCHS": 4
+"NUM_MINIBATCHES": 4
+"GAMMA": 0.99
+"GAE_LAMBDA": 0.95
+"CLIP_EPS": 0.3
+"ENT_COEF": 0.01
+"VF_COEF": 0.5
+"MAX_GRAD_NORM": 0.5
+"ENV_NAME": "OtherPlay"
+"SEED": 1900
+"FC_DIM_SIZE": 16
+"LSTM_HIDDEN_DIM": 16
+"ENV_KWARGS":
+  "num_agent_steps": 16
+  "r_mean": [5, 5, 5]
+  "sigma": 2
+  "sigma1": 0
+  "sigma2": 0
+  "sigma1_idx": 0
+  "sigma2_idx": 0
+  "sigma_rand": False
+  "sigma_values": [0, 0.5, 1, 2, 3, 4, 5, 10]
+  "non_coordinating_reward": -2
+  "dont_resample_obs_noise": True
+  "dont_resample_permutation": True
+  "disable_other_play": False # True = self-play, False = other-play
+  "include_agent_noise_sigmas": True
+  "include_r_mean_noise_sigma": True
+  "include_prev_acts_in_obs": True
+  "include_prev_reward_in_obs": False
+  "use_reward_delta": False
+  "override_obs_with_zeros": False
+
+"ANNEAL_LR": True
+
+# WandB Params
+"WANDB_MODE": "online"
+"ENTITY": ""
+"PROJECT": "OS_NLG"

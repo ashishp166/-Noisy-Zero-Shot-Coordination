@@ -1,0 +1,65 @@
+"LR": 5e-4
+"NUM_ENVS": 2048
+"NUM_STEPS": 64
+"TOTAL_TIMESTEPS": 100000000
+"UPDATE_EPOCHS": 16
+"NUM_MINIBATCHES": 1
+"GAMMA": 0.99
+"GAE_LAMBDA": 0.95
+"CLIP_EPS": 0.1
+"ENT_COEF": 0.06
+"VF_COEF": 0.5
+"MAX_GRAD_NORM": 0.5
+"ENV_NAME": "GridEnvComplex"
+"FC_DIM_SIZE": 128
+"GRU_HIDDEN_DIM": 128
+"LSTM_HIDDEN_DIM": 128
+"SEED": 200
+"population_size": 3
+"PRIORITIZATION_BETA": 3
+"TRAINED_SEEDS": [715, 716, 717, 718, 719]
+"ROBUST_SEED": 715
+"TARGET_KL": 0.01
+"MEP_ENT_COEF": 0.01
+"ENV_KWARGS":
+  "num_agent_steps": 32
+  "r_mean": [20, 10, 10]
+  "sigma": 2
+  "sigma1": 2
+  "sigma2": 2
+  "width": 8
+  "height": 8
+  "lever_subregion_width": 6
+  "lever_subregion_height": 8
+  "agent_1_start_pos": [0, 0]
+  "agent_2_start_pos": [0, 0]
+  "agent_pos_other_play": False
+  "lever_other_play": True
+  "non_coordinating_reward": -1
+  "stationary_reward": 1.5
+  "key_multiplier": 3
+  "include_agent_noise_sigmas": True
+  "include_r_mean_noise_sigma": True
+  "include_prev_acts_in_obs": False
+  "include_prev_reward_in_obs": False
+  "include_agent_pos": True
+  "include_other_agent_pos": True
+  "include_reward_pos": False
+  "override_obs_with_zeros": True
+  "agent_view_size": 1
+  "agent_1_view_size": 1
+  "agent_2_view_size": 1
+  "max_rand_start_agent_x_pos": 15
+  "max_rand_start_agent_y_pos": 15
+  "min_rand_start_agent_x_pos": 0
+  "min_rand_start_agent_y_pos": 0
+  "include_time_step": True
+  "time_horizon_arr": [8, 16, 32]
+  "rand_time_horizon": False
+  "agent_1_rand_time": False
+"ANNEAL_LR": True
+
+# WandB Params
+"WANDB_MODE": "disabled"
+"ENTITY": ""
+"PROJECT": "CEE"

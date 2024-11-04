@@ -1,0 +1,68 @@
+"LR": 5e-5
+"NUM_ENVS": 2048
+"NUM_STEPS": 128
+"TOTAL_TIMESTEPS": 40000000
+"UPDATE_EPOCHS": 8
+"NUM_MINIBATCHES": 32
+"GAMMA": 0.99
+"GAE_LAMBDA": 0.95
+"CLIP_EPS": 0.1
+"ENT_COEF": 0.03
+"VF_COEF": 0.5
+"MAX_GRAD_NORM": 0.5
+"ENV_NAME": "BattleShip"
+"FC_DIM_SIZE": 768
+"GRU_HIDDEN_DIM": 768
+"LSTM_HIDDEN_DIM": 768
+"SEED": 20
+"population_size": 8
+"PRIORITIZATION_BETA": 3
+"TRAINED_SEEDS": [715, 716, 717, 718, 719]
+"ROBUST_SEED": 10
+"TARGET_KL": 0.02
+"WARM_SEED": 5
+"ENV_KWARGS":
+  "num_agent_steps": 16
+  "r_mean":  [[4], [8], [12], [16], [20], [24]]
+  "sigma": 2
+  "sigma1_arr": [2, 2, 2, 2, 2, 2]
+  "sigma2_arr": [2, 2, 2, 2, 2, 2]
+  "width": 6
+  "height": 3
+  "reward_pos_other_play": True
+  "agent_start_pos": [0, 0]
+  "agent_pos_other_play": True
+  "lever_other_play": True
+  "non_coordinating_reward": 1
+  "non_prize_reward": -1
+  "final_step_penalty": -2
+  "include_agent_noise_sigmas": True
+  "include_r_mean_noise_sigma": True
+  "include_prev_acts_in_obs": False
+  "include_prev_reward_in_obs": False
+  "include_agent_pos": True
+  "include_other_agent_pos": True
+  "include_reward": False
+  "include_reward_pos": False
+  "override_obs_with_zeros": True
+  "include_rand_agent_1_view_size": False
+  "include_rand_agent_2_view_size": False
+  "agent_1_min_view_size": 1
+  "agent_1_max_view_size": 12
+  "agent_2_min_view_size": 1
+  "agent_2_max_view_size": 12
+  "agent_1_view_size": 8
+  "agent_2_view_size": 8
+  "agent_1_y_view_size": 6
+  "agent_2_y_view_size": 6
+  "rand_agent_1_view_size": [2, 4, 6, 8, 10, 12]
+  "rand_agent_2_view_size": [2, 4, 6, 8, 10, 12]
+  "max_rand_start_agent_x_pos": 6
+  "max_rand_start_agent_y_pos": 3
+  "include_time_step": True
+"ANNEAL_LR": True
+
+# WandB Params
+"WANDB_MODE": "online"
+"ENTITY": ""
+"PROJECT": "SSE"
